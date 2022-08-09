@@ -44,7 +44,7 @@ class MainActivity : AppCompatActivity() {
             val itemAdapter = ItemAdapter(employeesList)
 
             // Set the LayoutManager that this RecyclerView will use.
-            binding?.rvItemsList?.layoutManager = LinearLayoutManager(this)
+            binding?.rvItemsList?.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, true)
             binding?.rvItemsList?.adapter = itemAdapter
             binding?.rvItemsList?.visibility = View.VISIBLE
             binding?.tvNoRecordsAvailable?.visibility = View.GONE
